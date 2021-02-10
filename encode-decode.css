@@ -1,5 +1,5 @@
 
-.Page-title h1 {
+.Page-title h2 {
     margin-top: 5px;
     margin-bottom: 11px;
     display: flex;
@@ -92,7 +92,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.definitions h2 {
+.definitions h3 {
     background-color: hsl(209deg 29% 19%);
    display: flex;
    align-content: center;
