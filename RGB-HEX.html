@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB-HEX</title>
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="RGB-HEX.css">
+    <script defer  src="RGB-HEX.js"></script>
+</head>
+<body>
+    
+    <div class="nav-wrapper">
+        <div class="Title">Utility Tools</div>
+     
+          <div class="menu">
+         <ul>
+        <li> <a href="encode-decode.html">Encoder/Decoder</a>
+     
+           <div class="sub-menu-1">
+             
+             <a href="encode-decode.html">URL Encode/Decode</a>
+             <a href="base-64-encode-decode.html">BASE64 Encode/Decode</a>
+           
+            </div> 
+         </li>
+     
+        <li class="rgb-hex-link"> <a href="RGB-HEX.html">RGB-HEX Generator </a>  </li>
+           
+          
+
+
+        <li class="number-base-link"> <a href="Number-Base-Convertor.html">Number Base Convertor </a> </li>
+        <li class="uuid-link"> <a href="UUID-Generators">UUID Generators </a> </li>
+        <li class="password-link"> <a href="Secure-password-generator">Password Generator </a> </li>
+       
+     </ul>
+     </div>
+     </div>
+      
+     <div class="main">
+          
+          <h1>RGB to HEX Covertor</h1>
+         <div class="input-1">
+           <p>Red:</p>
+           <input id="box1" type="text" placeholder="255"  >
+         </div>
+
+         <div class="input-2">
+           <p>Green:</p>
+           <input id="box2" type="text" placeholder="255"  >
+         </div>
+         <div class="input-3">
+           <p>Blue:</p>
+           <input id="box3" type="text" placeholder="255" >
+         </div>
+          <div class="button">
+
+         <p class="error">Error: Please enter valid input: Values for R, G and B should be from 0 to 255 only! </p>
+         <input id="user-btn" type ="button" value="Convert to Hex" >
+  
+         </div>
+        
+         <div class="result-section">
+
+        <p>Above R,G,B values coverts to:</p>
+        <p ><span id="hex-result" class="Hex-value"></span></p>
+
+        <div class="color-box" id="result-box"></div>
+  
+      </div>
+
+</body>
+</html>
