@@ -1,4 +1,3 @@
-const { doc } = require("prettier");
 
 let red = document.querySelector('#box1');
 let green = document.querySelector('#box2');
@@ -8,35 +7,56 @@ let btn_press = document.querySelector('#user-btn');
 
 let hex_valuee = document.querySelector('#hex-result');
 
-let result_color = document.querySelector('#result-box');
+let clear_btn = document.querySelector('#clear');
 
-let hex_value =  (red, green, blue) => {
-    red = red.toString(16);
-    green = green.toString(16);
-    blue = blue.toString(16);
+
+function computee (red, green, blue) {
    
-    if(red.length == 1)
-        red = "0" +red;
-    
-
-    if(green.length == 1)
-    green = "0"+green;
-    
-
-   if(blue.length ==1 )
-       blue = "0"+blue;
+    red = parseInt(red);
+    green = parseInt(green);
+    blue = parseInt(blue);
    
+    if(red > 255 || green > 255 || blue > 255 || red <0 || blue < 0 || green < 0   )
+    return "Error! Please enter values between 0 to 255";
 
-   return "#" + red + green + blue ;
+
+  if(red < 9)
+      red = "0" +red;
+  
+
+  if(green < 9)
+  green = "0"+green;
+  
+
+ if(blue < 9 )
+     blue = "0"+blue;
+ 
+
+     red = red.toString(16);
+     green = green.toString(16);
+     blue = blue.toString(16);
+ 
+
+ return "#" + red + green + blue;
 }
 
 
-btn_press.addEventListener('click', ()=>{
 
-hex_value = (red.value, green.value, blue.value);
-
-result_color.style.backgroundColor = hex_value;
-
-hex_valuee.innerText = hex_value;
-
+btn_press.addEventListener('click', () =>{
+     
+ let ans = computee(red.value, green.value, blue.value);
+ hex_valuee.innerText = ans;
+ 
+document.querySelector('#result-box').style.backgroundColor = hex_valuee.innerText; 
 });
+
+
+clear_btn.addEventListener('click' , () =>{
+     red.value = null;
+     green.value = null;
+     blue.value = null;
+
+     hex_valuee.innerText = null;
+     document.querySelector('#result-box').style.backgroundColor = null;
+
+} );

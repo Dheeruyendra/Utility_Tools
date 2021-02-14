@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB-HEX</title>
-    <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="RGB-HEX.css">
-    <script defer  src="RGB-HEX.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hex-rgb.css">
+    <script defer src ="hex-rgb.js"></script>
 </head>
-<body>
+<body>  
   <div class="nav-wrapper">
     <div class="Title">Utility Tools</div>
  
@@ -56,40 +56,28 @@
  </div>
  </div>
  
-   
-      
      <div class="main">
           
-          <h2>RGB to HEX Color Covertor</h2>
-         <div class="input-1">
-           <p>Red:</p>
-           <input id="box1" type="text" placeholder="255"  >
-         </div>
+     <h2>HEX to RGB Color Covertor</h2>
+    
+     <div class="second_main">
+      <p>Enter the HEX Value:</p> 
 
-         <div class="input-2">
-           <p>Green:</p>
-           <input id="box2" type="text" placeholder="255"  >
-         </div>
-         <div class="input-3">
-           <p>Blue:</p>
-           <input id="box3" type="text" placeholder="255" >
-         </div>
-          <div class="button">
-
-         <p class="error">Error: Please enter valid input: Values for R, G and B should be from 0 to 255 only! </p>
-         <input id="user-btn" type ="button" value="Convert to Hex" >
-  
-         </div>
-        
-         <div class="result-section">
-
-        <p>Above R,G,B values coverts to:</p>
-
-        <span id="hex-result" class="Hex-value"></span>
-        <br>
-        <div class="color-box" id="result-box"></div>
-         <input type="button" class="clear-box" id="clear"  value="Clear">
+       <input type="text" placeholder="#000000" id="input_value" class="user_input">
+      <div class="btns">
+       <input type="button" value="Convert" id="button1">
+       <input type="button" value="Clear" id="button2" >
+       </div>
+       <p>The RGB values are: </p>
+       <p>Red Value: <span id="red_value" ></span></p>
+       <p>Green Value: <span id="green_value"></span></p>
+       <p>Blue Value: <span id="blue_value"></span></p>
       </div>
-
+        <div class="color_box" id="color_box1"></div>
+     
+      </div>
 </body>
 </html>
+
+
+<p class="result" id="color_box"></p>
