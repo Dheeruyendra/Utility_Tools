@@ -107,6 +107,7 @@
    color: hsl(0deg 0% 87%);
    margin-bottom: 0px;
    height: 280px;
+   overflow:scroll;
 }
 
 .definitions p {
