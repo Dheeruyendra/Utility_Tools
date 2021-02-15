@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB-HEX</title>
-    <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="RGB-HEX.css">
-    <script defer  src="RGB-HEX.js"></script>
+    <title>BinarytoDecimal</title>
+    <link rel ="stylesheet" href ="index.css"></style>
+    <link rel="stylesheet" href="binarytohex-octal-decimal.css">
+    <script defer src="binarytohex-octal-decimal.js"></script>
 </head>
 <body>
   <div class="nav-wrapper">
@@ -70,39 +70,27 @@
  </nav>
  </div>
  </div>
-      
-     <div class="main">
-          
-          <h2>RGB to HEX Color Covertor</h2>
-         <div class="input-1">
-           <p>Red:</p>
-           <input id="box1" type="text" placeholder="255"  >
-         </div>
-
-         <div class="input-2">
-           <p>Green:</p>
-           <input id="box2" type="text" placeholder="255"  >
-         </div>
-         <div class="input-3">
-           <p>Blue:</p>
-           <input id="box3" type="text" placeholder="255" >
-         </div>
-          <div class="button">
-
-         <p class="error">Error: Please enter valid input: Values for R, G and B should be from 0 to 255 only! </p>
-         <input id="user-btn" type ="button" value="Convert to Hex" >
+    
+     <div class="main-content">
+   <p class="main-title">  Binary to Decimal-HEX-Octal Converter <p>
+    <br>
+    <div class="boxes">
+    <p> Enter Binary Number: </p>
+    <input type="text" id="user_input" class="input_box" placeholder="01010">
+     <div class="buttons">
+      <input type="button" value="Convert" id="user_click1">
+      <input type="button" value="Clear" id="user_click2">
+     </div>
+   
+    <p> Decimal Number: </p>
+    <input type="text" id="deci-result" disabled="disabled">
+    <p> HEX Number: </p>
+    <input type="text" id="hex-result"  disabled="disabled">
+    <p>Octal Number: </p>
+    <input type="text" id="octal-result"  disabled="disabled">
+   </div>
   
-         </div>
-        
-         <div class="result-section">
 
-        <p>Above R,G,B values coverts to:</p>
-
-        <span id="hex-result" class="Hex-value"></span>
-        <br>
-        <div class="color-box" id="result-box"></div>
-         <input type="button" class="clear-box" id="clear"  value="Clear">
-      </div>
-
+  </div>
 </body>
 </html>
